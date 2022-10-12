@@ -1,0 +1,58 @@
+body{
+    font-family:'Graduate'
+}
+
+header{
+    background-color: rgb(218, 196, 238);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+button{
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#entete{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: baseline;
+}
+
+#menu svg{
+    margin: 10px;
+}
+
+#menu{
+    background-color:rgb(218, 196, 238) ;
+    border-radius: 10px;
+    border-right: dotted gray;
+}
+
+h1{
+    text-align: center;
+}
+
+#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav a{
+    color: black;
+    text-decoration: underline;
+}
+
+.nav{
+    padding: 20px;
+}

@@ -1,0 +1,10 @@
+div{width:200px;height:150px;}
+
+#un{background-image: url(http://img6.imageshack.us/img6/6806/o2bj.jpg);}
+
+#deux{
+    display:none;
+    background-color:white;
+    opacity:0.5;}
+
+#un:hover #deux{display:block}
