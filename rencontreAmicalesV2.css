@@ -56,3 +56,32 @@ h1{
 .nav{
     padding: 20px;
 }
+
+.myclassperso{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.myclassperso h5{
+    color: black;
+    font-size: medium;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a :hover{
+    border-bottom: none ;
+    color: rgb(136, 23, 170);
+
+}
+
+.myclassperso:hover img{
+    opacity: 70%;
+    filter: blur(2px);
+
+}
+

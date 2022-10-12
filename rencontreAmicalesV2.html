@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes événements</title>
+    <title>MeetWell Rencontres amicales</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="mesevenements.css">
+    <link rel="stylesheet" href="./rencontreAmicalesV2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-transparent">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="50"> Meet Well</a>
+            <a class="navbar-brand" href="./accueil.html">
+              <img src="./images/Capture d’écran 2022-09-23 151612.png"  alt="logo" width="50">Meet Well</a>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-secondary" type="button">
@@ -29,8 +29,10 @@
             </div>
           </div>
         </nav>
+        
         <div>
-            <button>Se déconnecter</button>
+            <button><a href="./accueil.html"></a> Se déconnecter</button>
+            <button><a href="./accueilprofil.html"></a>profil</button>
         </div>
     </header>
 
@@ -40,7 +42,7 @@
                 <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="250">
             </div>
             <div class="col-9">
-                <h1>Mes événements</h1>
+                <h1>Rencontres amicales</h1>
             </div>
         </div>
         <div class="row">
@@ -50,7 +52,7 @@
                     <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                     </svg>
-                    <a href=""><span>Accueil</span></a>
+                    <a href="./accueil.html"><span>Accueil</span></a>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -62,7 +64,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-heart-fill" viewBox="0 0 16 16">
                     <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                     </svg>
-                    <a href=""><span>Mes événements</span></a>
+                    <a href="./mesevenements.html"><span>Mes événements</span></a>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -76,54 +78,56 @@
                 <div class="row">
                     <ul class="nav">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                          <a class="nav-link active" aria-current="page" href="./accueil.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link disabled">Rencontres amicales</a>
                         </li>
                       </ul>
                 </div>
+  
+                <h2 class="row offset-1">Themes</h2>
 
 
-
-
-                <div class="row row-cols-4 g-2">
-                    <div class="col"><a href=""><img src="./images/tayc.jpg" alt="Music" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/nature.jfif" alt="nature" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/animaux.jfif" alt="animaux" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/louvre.jfif" alt="culture" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/image bar.jpg" alt="bar" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/cuisiner.jpg" alt="culinaire" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/Art.jfif" alt="art" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/sport.jpg" alt="sport" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/Bien etre.jfif" alt="bien etre" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/shopping.jfif" alt="shopping" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/Parc d'attraction.jpg" alt="parc d'attraction" width="110" height="70"></a></div>
-                    <div class="col"><a href=""><img src="./images/Long sejour.jfif" alt="sejour long" width="110" height="70"></a></div>
+                <div class="row row-cols-4  offset-1 g-2 ">
+                    <div class="col myclassperso"><a href=""><img src="./images/tayc.jpg" alt="Music"  width="110" height="70">
+                        <h5>Musique</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/nature.jfif" alt="nature" width="110" height="70">
+                        <h5>Nature</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/animaux.jfif" alt="animaux" width="110" height="70">
+                        <h5>Animaux</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/louvre.jfif" alt="culture" width="110" height="70">
+                        <h5>Culture</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/image bar.jpg" alt="bar" width="110" height="70">
+                        <h5>Bar</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/cuisiner.jpg" alt="culinaire" width="110" height="70">
+                        <h5>Culinaire</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/Art.jfif" alt="art" width="110" height="70">
+                        <h5>Art</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/sport.jpg" alt="sport" width="110" height="70">
+                        <h5>Sport</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/Bien etre.jfif" alt="bien etre" width="110" height="70">
+                        <h5>Bien être</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/shopping.jfif" alt="shopping" width="110" height="70">
+                        <h5>Shopping</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/Parc d'attraction.jpg" alt="parc d'attraction" width="110" height="70">
+                        <h5>Parc d'attraction</h5>
+                    </a></div>
+                    <div class="col myclassperso"><a href=""><img src="./images/Long sejour.jfif" alt="sejour long" width="110" height="70">
+                        <h5>Sejour long</h5>
+                    </a></div>
             
-                </div>
-                <div class="row">
-                    <div class="col-3">
-
-                    </div>
-                    <div class="col-6">
-
-                    </div>
-                    <div class="col-3">
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-
-                    </div>
-                    <div class="col-6">
-
-                    </div>
-                    <div class="col-3">
-                        
-                    </div>
-                </div>
+                
             </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
