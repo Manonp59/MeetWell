@@ -1,0 +1,27 @@
+
+
+
+body{
+    font-family:'Graduate'
+}
+
+header{
+    background-color: rgb(218, 196, 238);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#conteneur{
+    display: flex;
+    background-color: blue;
+    
+    flex-wrap: wrap;
+    align-items: space-between;
+    
+}
