@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes événements</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="rencontreAmicalesV2.css">
+    <link rel="stylesheet" href="musique.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,8 @@ $(function(){
                 <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="250">
             </div>
             <div class="col-9">
-                <h1>Mes événements</h1>
+                <div class="row"><h1>Mes événements</h1></div>
+                <div class="row"><h2>Thème Musique</h2></div>
             </div>
         </div>
         <div class="row">
@@ -72,41 +73,53 @@ $(function(){
                           <a class="nav-link active" aria-current="page" href="./accueilprofil.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled">Rencontres amicales</a>
+                          <a class="nav-link active" aria-current="page" href="./rencontreAmicalesV2.html">Rencontres amicales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Musique</a>
                         </li>
                       </ul>
                 </div>
-                <div class="row">
-                    <h2>Thèmes</h2>
+                <div class="filtres2">
+                  <div class="row">
+                    <p>Filtrer les événements</p>
+                  </div>
+                    <div class="row filtres">
+                    <div class="col-3"><label>Date <input type="month" id="filtre"></label></div>
+                    <div class="col-3"><label>Ville <select name="villes" id="filtre">
+                        <option value="Lille">Lille</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Toulouse">Toulouse</option>
+                        <option value="Bordeaux">Bordeaux</option>
+                        <option value="Brest">Brest</option>
+                        <option value="Strasbourg">Strasbourg</option>
+                    </select></label></div>
+                    <div class="col-3"><label>Nombre de participants <select name="participants" id="filtre">
+                        <option value="0 à 5">0 à 5</option>
+                        <option value="5 à 10">5 à 10</option>
+                        <option value="10 à 20">10 à 20</option>
+                        <option value="+ de 20">+ de 20</option>
+                    </select></label></div>
+                    <div class="col-3"><label>Tranche d'âge <select name="age" id="filtre">
+                        <option value="18-25">18-15 ans</option>
+                        <option value="25-35">25-35 ans</option>
+                        <option value="35-50">35-50 ans</option>
+                        <option value="+ de 50">> 50 ans</option>
+                    </select></label></div>
+                </div>  
                 </div>
+                
 
 
 
 
-                <div class="col-10 offset-2 themes">
-                    <div class="row ligne ">
-                        <div class="col-3 theme"><a href=""><img id="image1" src="./images/tayc.jpg" alt="Music" width="161" height="110"><h3 class="titre">Musique</h3></a></div>
-                        <div class="col-3  theme"><a href=""><img src="./images/nature.jfif" alt="nature" width="161" height="110"><h3 class="titre">Nature</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img src="./images/animaux.jfif" alt="animaux" width="161" height="110"><h3 class="titre">Animaux</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img src="./images/louvre.jfif" alt="culture" width="161" height="110"><h3 class="titre">Musées</h3></a></div>
-                    </div>
-                    <div class="row ligne">
-                        <div class="col-3 theme"><a href=""><img src="./images/image bar.jpg" alt="bar" width="161" height="110"><h3 class="titre">Bars</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img  src="./images/cuisiner.jpg" alt="culinaire" width="161" height="110"><h3 class="titre">Cuisine</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img  src="./images/Art.jfif" alt="art" width="161" height="110"><h3 class="titre">Arts</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img  src="./images/sport.jpg" alt="sport" width="161" height="110"><h3 class="titre">Sport</h3></a></div>
-                    </div>
-                    <div class="row ligne">
-                        <div class="col-3 theme"><a href=""><img  src="./images/Bien etre.jfif" alt="bien etre" width="161" height="110"><h3 class="titre">Bien-être</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img src="./images/shopping.jfif" alt="shopping" width="161" height="110"><h3 class="titre">shopping</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img src="./images/Parc d'attraction.jpg" alt="parc d'attraction" width="161" height="110"><h3 class="titre">Attractions</h3></a></div>
-                        <div class="col-3 theme"><a href=""><img src="./images/Long sejour.jfif" alt="sejour long" width="161" height="110"><h3 class="titre">Voyages</h3></a></div>
-                    </div>
-                </div>
+                
                 
                     </div>
                 </div>
+                
             </div>
+
         </div>
     </div>
 <div id="footer"></div>

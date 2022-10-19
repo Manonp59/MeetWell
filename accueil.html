@@ -7,33 +7,23 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script 
+      src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+      $("#header1").load("header1.html"); 
+      $("#footer").load("footer.html"); 
+      });
+    </script> 
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="50"> Meet Well</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-            <button class="btn btn-secondary" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <div>
-        <button>Se connecter</button>
-        <button>S'inscrire</button>
-    </div>
-</header>
+  <div id="header1"></div>
     <section id="logo">
         <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="300">
         <h1>Meet Well</h1>
@@ -61,11 +51,11 @@
             <img src="./images/ami.jpg" class="d-block w-100" alt="braderie">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev fleche" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next fleche" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -82,7 +72,7 @@
         <div class="conteneur">
           <img src="./images/karaoké.jfif" alt="karaoké" height="150" width="300">
           <div class="content">
-          <a id="details" href="">Détails</a> 
+          <a id="details" href="./connexion.html">Détails</a> 
           </div>
         </div>
         <h4>30/02/22</h4>
@@ -92,7 +82,7 @@
         <div class="conteneur">
           <img src="./images/braderie.jpg" alt="karaoké" height="150" width="300">
           <div class="content">
-          <a id="details" href="">Détails</a> 
+          <a id="details" href="./connexion.html">Détails</a> 
           </div>
         </div>
         <h4>01/09/22</h4>
@@ -102,13 +92,13 @@
         <div class="conteneur">
           <img src="./images/braderie.jpg" alt="karaoké" height="150" width="300">
           <div class="content">
-          <a id="details" href="">Détails</a> 
+          <a id="details" href="./connexion.html">Détails</a> 
           </div>
         </div>
         <h4>10/10/22</h4>
     </section>
     </div>
-    
+<div id="footer"></div>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

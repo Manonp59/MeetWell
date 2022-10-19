@@ -1,0 +1,149 @@
+body{
+    font-family:'Graduate'
+}
+
+header{
+    background-color: rgb(218, 196, 238);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+button{
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+    color: rgba(72, 70, 70, 0.952);
+}
+
+#logo{
+    width: 250px;
+    display: flex;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    color:  rgba(72, 70, 70, 0.952);
+}
+
+.row{
+    padding: 5px;
+}
+
+#colonne a{
+    color: blueviolet;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+#button1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#button1:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+input{
+    border-radius: 10px;
+}
+
+
+#banniere{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    background-color: rgb(218, 196, 238);
+    display: flex;
+    align-items:center;
+    margin-top: 40px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#icon{
+    width: 2000px;
+}
+
+#colonne{
+    display: flex;
+    flex-direction: column;
+}
+
+#inscription{
+    display: flex;
+    justify-content: center;
+
+}
+
+#nom{
+    float: left;
+    
+}
+
+.large{
+    width: 450px;
+}
+
+.centre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.centre p{
+    text-decoration: underline;
+}
+
+.button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.button{
+    margin: 20px;
+}
+
+#photo{
+    border: dotted blueviolet 2px;
+}
+
+.interets p{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.interets{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+

@@ -41,54 +41,35 @@ button:hover{
 
 h1{
     text-align: center;
-    margin-bottom: 0;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+}
+
+span{
+    text-align: center;
+}
+
+#type{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#type img:hover{
+    opacity: 50%;
+    border: gray solid;
+}
+
+#type img{
+    transition: 1s;
+    border-radius: 10px;
 }
 
 #menu a{
     color: black;
     text-decoration: none;
-}
-
-.nav a{
-    color: black;
-    text-decoration: underline;
-}
-
-.nav{
-    padding: 20px;
-}
-
-#formulaire img{
-    width: 100px;
-    margin: auto;
-    
-}
-
-.ligne{
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-#CVV{
-    width: 50px;
-}
-
-#ccn{
-    width: 300px
-}
-
-#formulaire{
-    border: rgb(204, 165, 240) solid;
-    border-radius: 10px;
-}
-
-.bouton:hover{
-    background-color: rgb(219, 191, 245);
-    
-}
-
-#nom{
-    width: 280px;
 }
