@@ -1,0 +1,90 @@
+body{
+    font-family:'Graduate'
+}
+
+header{
+    background-color: rgb(218, 196, 238);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#inscript {
+    display: flex;
+    background-color: rgb(158, 158, 158);
+    justify-content: space-evenly;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#inscript div{
+    display: flex;
+    flex-direction: column;
+}
+#inscript input{
+    margin: 35px;
+    height: 50px;
+    width: 500px;
+}
+
+button{
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+    Width :100% ;
+    color: rgba(72, 70, 70, 0.952);
+}
+
+#logo{
+    width: 250px;
+    display: flex;
+    margin: auto;
+}
+
+#connect{
+    display: flex;
+    justify-content: center;
+}
+
+.colonne img{
+    margin: auto;
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Graduate';
+}
+
+#reseaux{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footercontainer{
+    padding: 5px;
+    background-color: rgb(220, 193, 246);
+    margin-top: 20px;
+}
+
+.colonne p{
+    text-align: center;
+    color: rgb(83, 82, 82);
+}
+
+.colonne a{
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+}
+
