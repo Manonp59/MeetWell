@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes événements</title>
+    <title>MeetWell Rencontres amicales</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="mesevenements.css">
+    <link rel="stylesheet" href="rencontreAmicalesV2.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,23 +16,24 @@
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
-    </script>
-    <script> 
-    $(function(){
-    $("#header2").load("header2.html"); 
-    $("#footer").load("footer.html"); 
-    });
-    </script> 
+</script>
+<script> 
+$(function(){
+  $("#header2").load("header2.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
     <div id="header2"></div>
+
     <div class="container">
         <div class="row" id="entete">
             <div class="col-3">
                 <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="250">
             </div>
             <div class="col-9">
-                <h1>Mes événements</h1>
+                <h1>Rencontres amicales</h1>
             </div>
         </div>
         <div class="row">
@@ -71,79 +72,44 @@
                           <a class="nav-link active" aria-current="page" href="./accueilprofil.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled">Mes événements</a>
+                          <a class="nav-link disabled">Rencontres amicales</a>
                         </li>
                       </ul>
                 </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1" >
-                        <img src="./images/braderie.jpg" alt="braderie" width="200">
+                <div class="row">
+                    <h2>Thèmes</h2>
+                </div>
+
+
+
+
+                <div class="col-10 offset-2 themes">
+                    <div class="row ligne ">
+                        <div class="col-3 theme"><a href=""><img id="image1" src="./images/tayc.jpg" alt="Music" width="161" height="110"><h3 class="titre">Musique</h3></a></div>
+                        <div class="col-3  theme"><a href=""><img src="./images/nature.jfif" alt="nature" width="161" height="110"><h3 class="titre">Nature</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img src="./images/animaux.jfif" alt="animaux" width="161" height="110"><h3 class="titre">Animaux</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img src="./images/louvre.jfif" alt="culture" width="161" height="110"><h3 class="titre">Musées</h3></a></div>
                     </div>
-                    <div class="col-6">
-                        <a href="">Braderie de Lille - 02/09/22</a>
+                    <div class="row ligne">
+                        <div class="col-3 theme"><a href=""><img src="./images/image bar.jpg" alt="bar" width="161" height="110"><h3 class="titre">Bars</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img  src="./images/cuisiner.jpg" alt="culinaire" width="161" height="110"><h3 class="titre">Cuisine</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img  src="./images/Art.jfif" alt="art" width="161" height="110"><h3 class="titre">Arts</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img  src="./images/sport.jpg" alt="sport" width="161" height="110"><h3 class="titre">Sport</h3></a></div>
                     </div>
-                    <div class="col-2">
-                        <svg  class="iconrouge" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                          </svg>
-                          <span>Passé</span> 
+                    <div class="row ligne">
+                        <div class="col-3 theme"><a href=""><img  src="./images/Bien etre.jfif" alt="bien etre" width="161" height="110"><h3 class="titre">Bien-être</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img src="./images/shopping.jfif" alt="shopping" width="161" height="110"><h3 class="titre">shopping</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img src="./images/Parc d'attraction.jpg" alt="parc d'attraction" width="161" height="110"><h3 class="titre">Attractions</h3></a></div>
+                        <div class="col-3 theme"><a href=""><img src="./images/Long sejour.jfif" alt="sejour long" width="161" height="110"><h3 class="titre">Voyages</h3></a></div>
                     </div>
                 </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/tayc.jpg" alt="Tays" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Concert Tayc - Parc des Princes - 21/12/22</a>
-                    </div>
-                    <div class="col-2">
-                        <a  href="">
-                            <svg class="iconrouge"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-                            </svg>
-                            <span id="paiement">Paiement à effectuer </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/louvre.jfif" alt="louvre" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Visite Musée du Louvre - 15/11/22</a>
-                    </div>
-                    <div class="col-2">
-                        <svg class="iconvert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                          </svg>
-                          <span>Inscription validée</span>
-                    </div>
-                </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/karaoké.jfif" alt="karaoké" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Karaoké à Lille - 29/10/22</a>
-                    </div>
-                    <div class="col-2">
-                        <svg class="iconvert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                          </svg>
-                          <span>Inscription validée</span>
+                
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="footer"></div>
-
-    
-            
-
+<div id="footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

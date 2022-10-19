@@ -1,0 +1,33 @@
+
+
+.colonne img{
+    margin: auto;
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Graduate';
+}
+
+#reseaux{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footercontainer{
+    padding: 5px;
+    background-color: rgb(220, 193, 246);
+    margin-top: 20px;
+}
+
+.colonne p{
+    text-align: center;
+    color: rgb(83, 82, 82);
+}
+
+.colonne a{
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+}

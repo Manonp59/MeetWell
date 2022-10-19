@@ -43,45 +43,33 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+    padding: 30px;
+}
+
+span{
+    text-align: center;
+}
+
+#type{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#type img:hover{
+    opacity: 50%;
+    border: gray solid;
+}
+
+#type img{
+    transition: 1s;
+    border-radius: 10px;
+}
+
 #menu a{
     color: black;
     text-decoration: none;
 }
-
-.nav a{
-    color: black;
-    text-decoration: underline;
-}
-
-.nav{
-    padding: 20px;
-}
-
-.evenements{
-    padding: 5px;
-    text-align: center;
-}
-
-#event{
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-}
-
-#event a{
-    color:blueviolet;
-    text-decoration: none;
-}
-
-.iconrouge{
-    color: red;
-}
-
-.iconvert{
-    color:green
-}
-
-#paiement{
-    color: black;
-}
-

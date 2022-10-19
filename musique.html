@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes événements</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="mesevenements.css">
+    <link rel="stylesheet" href="musique.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,23 +16,25 @@
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
-    </script>
-    <script> 
-    $(function(){
-    $("#header2").load("header2.html"); 
-    $("#footer").load("footer.html"); 
-    });
-    </script> 
+</script>
+<script> 
+$(function(){
+  $("#header2").load("header2.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
     <div id="header2"></div>
+
     <div class="container">
         <div class="row" id="entete">
             <div class="col-3">
                 <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="250">
             </div>
             <div class="col-9">
-                <h1>Mes événements</h1>
+                <div class="row"><h1>Mes événements</h1></div>
+                <div class="row"><h2>Thème Musique</h2></div>
             </div>
         </div>
         <div class="row">
@@ -71,79 +73,56 @@
                           <a class="nav-link active" aria-current="page" href="./accueilprofil.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled">Mes événements</a>
+                          <a class="nav-link active" aria-current="page" href="./rencontreAmicalesV2.html">Rencontres amicales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Musique</a>
                         </li>
                       </ul>
                 </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1" >
-                        <img src="./images/braderie.jpg" alt="braderie" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Braderie de Lille - 02/09/22</a>
-                    </div>
-                    <div class="col-2">
-                        <svg  class="iconrouge" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                          </svg>
-                          <span>Passé</span> 
+                <div class="filtres2">
+                  <div class="row">
+                    <p>Filtrer les événements</p>
+                  </div>
+                    <div class="row filtres">
+                    <div class="col-3"><label>Date <input type="month" id="filtre"></label></div>
+                    <div class="col-3"><label>Ville <select name="villes" id="filtre">
+                        <option value="Lille">Lille</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Toulouse">Toulouse</option>
+                        <option value="Bordeaux">Bordeaux</option>
+                        <option value="Brest">Brest</option>
+                        <option value="Strasbourg">Strasbourg</option>
+                    </select></label></div>
+                    <div class="col-3"><label>Nombre de participants <select name="participants" id="filtre">
+                        <option value="0 à 5">0 à 5</option>
+                        <option value="5 à 10">5 à 10</option>
+                        <option value="10 à 20">10 à 20</option>
+                        <option value="+ de 20">+ de 20</option>
+                    </select></label></div>
+                    <div class="col-3"><label>Tranche d'âge <select name="age" id="filtre">
+                        <option value="18-25">18-15 ans</option>
+                        <option value="25-35">25-35 ans</option>
+                        <option value="35-50">35-50 ans</option>
+                        <option value="+ de 50">> 50 ans</option>
+                    </select></label></div>
+                </div>  
+                </div>
+                
+
+
+
+
+                
+                
                     </div>
                 </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/tayc.jpg" alt="Tays" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Concert Tayc - Parc des Princes - 21/12/22</a>
-                    </div>
-                    <div class="col-2">
-                        <a  href="">
-                            <svg class="iconrouge"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-                            </svg>
-                            <span id="paiement">Paiement à effectuer </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/louvre.jfif" alt="louvre" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Visite Musée du Louvre - 15/11/22</a>
-                    </div>
-                    <div class="col-2">
-                        <svg class="iconvert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                          </svg>
-                          <span>Inscription validée</span>
-                    </div>
-                </div>
-                <div class="row" id="event">
-                    <div class="col-3 offset-1">
-                        <img src="./images/karaoké.jfif" alt="karaoké" width="200">
-                    </div>
-                    <div class="col-6">
-                        <a href="">Karaoké à Lille - 29/10/22</a>
-                    </div>
-                    <div class="col-2">
-                        <svg class="iconvert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                          </svg>
-                          <span>Inscription validée</span>
-                    </div>
-                </div>
+                
             </div>
+
         </div>
     </div>
-    <div id="footer"></div>
-
-    
-            
-
+<div id="footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

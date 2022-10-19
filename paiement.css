@@ -41,6 +41,7 @@ button:hover{
 
 h1{
     text-align: center;
+    margin-bottom: 0;
 }
 
 #menu a{
@@ -57,31 +58,37 @@ h1{
     padding: 20px;
 }
 
-.evenements{
-    padding: 5px;
+#formulaire img{
+    width: 100px;
+    margin: auto;
+    
+}
+
+.ligne{
+    padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-#event{
-    padding: 5px;
-    align-items: center;
-    text-align: center;
+#CVV{
+    width: 50px;
 }
 
-#event a{
-    color:blueviolet;
-    text-decoration: none;
+#ccn{
+    width: 300px
 }
 
-.iconrouge{
-    color: red;
+#formulaire{
+    border: rgb(204, 165, 240) solid;
+    border-radius: 10px;
 }
 
-.iconvert{
-    color:green
+.bouton:hover{
+    background-color: rgb(219, 191, 245);
+    
 }
 
-#paiement{
-    color: black;
+#nom{
+    width: 280px;
 }
-

@@ -56,32 +56,3 @@ h1{
 .nav{
     padding: 20px;
 }
-
-.evenements{
-    padding: 5px;
-    text-align: center;
-}
-
-#event{
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-}
-
-#event a{
-    color:blueviolet;
-    text-decoration: none;
-}
-
-.iconrouge{
-    color: red;
-}
-
-.iconvert{
-    color:green
-}
-
-#paiement{
-    color: black;
-}
-
