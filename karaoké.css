@@ -72,10 +72,6 @@ h1{
     margin: 20px;
 }
 
-.col-4{
-    align-items: center;
-}
-
 .evenements a{
     color: black;
     text-decoration: none;
@@ -98,46 +94,66 @@ h2{
    color: blueviolet;
 }
 
-.filtres{
-    text-align: center;
+.details{
+    font-size: 20px;
+    margin: 0%;
 }
 
-#filtre{
-    width: 150px;
-}
-
-.filtres2{
-    border:dotted gray;
+.detail{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
     padding: 10px;
 }
 
-.filtres2 p{
-    text-align: center;
-    background-color: rgb(218, 196, 238);
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.titre{
-    text-align: center;
-    margin: 0%;
+.detail svg{
+    color: blueviolet;
+}
+
+#description{
+    font-size: 13px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+#participants{
     font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: blueviolet;
 }
 
-.event{
+
+.personne{
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-#image1{
-    margin: auto;
+.prenom{
+    font-size: 15px;
 }
 
-.event{
+.banniere{
+    background-color: rgb(218, 196, 238);
+    border-radius: 10px ;
+}
+
+.bouton{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.evenements{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
+
+
+
+
+
+

@@ -68,76 +68,52 @@ h1{
     padding: 20px;
 }
 
-.ligne{
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.photo img{
+    border-radius: 100%;
+    border: rgb(218, 196, 238) solid 7px;
+}
+
+#profession{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.signes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#age{
+    padding-top: 135px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.signe{
     margin: 20px;
 }
 
-.col-4{
-    align-items: center;
+.profil{
+    border-radius: 15%;
+    border: dotted black 2px;
+    background-color: rgb(242, 236, 249);
 }
 
-.evenements a{
-    color: black;
-    text-decoration: none;
-}
-
-.titre{
-    font-size: 20px;
-    text-align: center;
-    margin: 0%;
-}
-
-
-.event:hover .titre{
-    background-color: blueviolet;
-    color: white;
-
-}
-
-h2{
-   color: blueviolet;
-}
-
-.filtres{
-    text-align: center;
-}
-
-#filtre{
-    width: 150px;
-}
-
-.filtres2{
-    border:dotted gray;
-    padding: 10px;
-}
-
-.filtres2 p{
-    text-align: center;
-    background-color: rgb(218, 196, 238);
-}
-
-.titre{
-    text-align: center;
-    margin: 0%;
-    font-size: 20px;
-}
-
-.event{
-    display: flex;
-    align-content: center;
-}
-
-#image1{
-    margin: auto;
-}
-
-.event{
-    display: flex;
-    flex-direction: column;
-}
-
-.evenements{
-    display: flex;
-    justify-content: space-between;
+.bouton{
     padding: 20px;
 }
+
+#prenom{
+    color: blueviolet;
+}
+

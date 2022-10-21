@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil profil</title>
+    <title>MeetWell Rencontres amicales</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="accueilprofil.css">
+    <link rel="stylesheet" href="rencontreAmoureuses.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-        $(function(){
-        $("#header2").load("header2.html"); 
-        $("#footer").load("footer.html"); 
-        });
-    </script>  
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header2").load("header2.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
     <div id="header2"></div>
@@ -33,7 +33,7 @@
                 <img src="./images/Capture d’écran 2022-09-23 151612.png" alt="logo" width="250">
             </div>
             <div class="col-9">
-                <h1>Bienvenue Thomas !</h1>
+                <h1>Rencontres amoureuses</h1>
             </div>
         </div>
         <div class="row">
@@ -65,26 +65,67 @@
                     <a href=""><span>Modifier mon profil</span></a>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-8">
                 <div class="row">
-                    <h2>Je veux :</h2>
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./accueilprofil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Rencontres amoureuses</a>
+                        </li>
+                      </ul>
                 </div>
-                <div class="row">
-                    <div class="col-6" id="type">
-                        <span>Des rencontres amicales</span>
-                        <a href="./rencontreAmicalesV2.html"><img src="./images/amies.jpg" alt="amies" width="350"></a>
+                
+                <div class="col-11 offset-1">
+                    <div class="row profil">
+                    <div class="col-6">
+                        <div class="row">
+                            <h2 id="prenom">Jean-Baptiste</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col photo">
+                            <img src="./images/jb.jfif" alt="Jean-Baptiste" height="270" class="center">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 id="profession">Comédien</h3>
+                        </div>
                     </div>
-                    <div class="col-6" id="type">
-                        <span>Des rencontres amoureuses</span>
-                        <a href="./rencontreAmoureuses.html"><img src="./images/amour.jfif" alt="amour" width="350"></a>   
+                    <div class="col-6">
+                        <div class="row">
+                            <h3 id="age">31 ans - Lyon</h3>
+                        </div>
+                        <div class="row">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda hic accusantium minus aut cumque praesentium a ullam, fuga repudiandae porro soluta corrupti beatae harum veniam quibusdam at ab iste!</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="row">
+                        <div class="col-11 offset-1 signes">
+                           <button> <svg class="bouton" xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                          </svg></button>
+                        <button><svg  class="bouton" xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg></button>
+                        </div>
+                
+                </div>
+
+
+
+
+                
+                
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <div id="footer"></div>
-    
+<div id="footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
